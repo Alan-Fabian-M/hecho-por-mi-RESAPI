@@ -1,0 +1,7 @@
+Que es sequelize?
+
+sequelize es una herramienta de orm (nos permite convertir los objetos en en un formato adecuado para ser almacenados en cuakquier base de datos )
+
+conexion a una base de datos
+
+Para conectarse a la base de datos, debe crear una instancia de Sequelize. Esto se puede hacer pasando los parámetros de conexión por separado al constructor Sequelize o pasando un único URI de conexión:
