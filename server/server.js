@@ -1,10 +1,11 @@
 const express = require('express');
 const cors = require('cors');
 
-const db = require('../db/connection.');
 const config = require('./config');
+const db = require('../db/connection');
  
 class Server{
+    
     constructor(){
         // se instancia la app con express 
         this.app = express();
