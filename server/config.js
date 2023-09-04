@@ -8,8 +8,8 @@ const config = {
     
     DB_CONNECTION : process.env.DB_CONNECTION || 'postgres',
     DB_HOST: process.env.DB_HOST || 'localhost',
-    DB_DATABASE: process.env.DB_DATABASE || 'employees',
-    DB_PASSWORD: process.env.DB_PASSWORD || 'alan159',
+    DB_DATABASE: process.env.DB_DATABASE || 'company',
+    DB_PASSWORD: process.env.DB_PASSWORD || 'password',
     DB_USERNAME : process.env.DB_USERNAME || 'postgres',
     DB_PORT : process.env.DB_PORT || '5432'
 

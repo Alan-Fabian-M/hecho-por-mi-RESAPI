@@ -11,7 +11,7 @@ const typeDatabBase = config.DB_CONNECTION;
 
 const url = `${typeDatabBase}://${user}:${password}@${host}:${port}/${DataBase}`;
 
-console.log(url)
+//console.log(url)
 
 const options = {
     dialect: config.DB_CONNECTION, 

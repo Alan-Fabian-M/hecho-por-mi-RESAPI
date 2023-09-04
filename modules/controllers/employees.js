@@ -9,22 +9,23 @@ exports.get = async (req, res) => {
     const {id} = req.params
     const obj = await employees.findByPk(id)
     if (obj) {
-        res.json(obj)
+        res.json({obj})
     }else{
         res.status(404).json({
             message: `no existe un empleado con el id ${id}`
-        })
+        });
     }
 
-}
+};
 
 exports.post = async (req,res) => {
-    const {body} = req
+    const {id,name, salary} = req.body
     try {
-        const obj = new employees(body);
-        await obj.save;
+        const obj = new employees({id,name, salary});
+        await obj.save();
     } catch (error) {
         console.log(error);
+       //console.log({name,salary})
         res.status(404).json({
             message: 'Error en post'
         })

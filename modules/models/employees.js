@@ -26,7 +26,7 @@ employees.init(
     {
         sequelize:db,
         modelName: "employees",
-        tableName: "employees"
+        tableName: "Employees"
     }
     
 );

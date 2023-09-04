@@ -14,6 +14,8 @@ class Server{
 
         // aqui se añade las path {url} de cada elemento
         this.paths = {
+            employees: '/api/employees',
+            job: '/api/job'
         } 
 
         //conectar a la base de datos
@@ -47,7 +49,7 @@ class Server{
     }
 
     routes(){
-
+        this.app.use(this.paths.employees, require('../modules/routes/employees'))
     }
 
     listen(){
